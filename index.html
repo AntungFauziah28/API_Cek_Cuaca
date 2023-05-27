@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CEK CUACA</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #00bcd4;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: transparent;
+      border-radius: 5px;
+      box-shadow: none;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .form-group input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px 0 0 5px;
+    }
+
+    .form-group .button-search {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      background-color: #ffffff;
+      color: #00bcd4;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      color: #ffffff;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>CEK CUACA</h1>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Cari kota atau Negara...">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button" id="button-search">Cari</button>
+        </div>
+      </div>
+
+    <div class="container mt-5 result"></div>
+  </div>
+
+  <footer>
+    &copy; 2023 Cek Cuaca. All rights reserved.
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
